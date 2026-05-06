@@ -103,6 +103,42 @@
     width: 25%;
     transition: width 220ms ease;
   }
+
+  .product-thumb {
+    @apply w-14 h-14 rounded-lg bg-gray-50 border border-transparent p-1 flex items-center justify-center overflow-hidden hover:border-gray-300 transition-colors;
+  }
+
+  .product-thumb.is-active {
+    @apply border-gray-200 bg-white shadow-sm;
+  }
+
+  .product-thumb img {
+    @apply w-full h-full object-contain;
+  }
+
+  .review-card {
+    @apply bg-white border border-gray-100 rounded-2xl p-6;
+  }
+
+  .faq-card {
+    @apply bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center gap-4 cursor-pointer hover:bg-gray-50 transition-colors text-sm font-bold text-gray-900;
+  }
+
+  .faq-card.open {
+    @apply block bg-white p-6;
+  }
+
+  .faq-card.open > span {
+    @apply block pr-8;
+  }
+
+  .faq-card.open > i {
+    @apply float-right -mt-5 text-gray-500;
+  }
+
+  .faq-answer {
+    @apply mt-4 text-sm text-gray-500 leading-relaxed font-normal;
+  }
 }
 
 @media (max-width: 767px) {

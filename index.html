@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Klothink Fashion Store</title>
-
+  <title>Product Detail - Klothink</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary:      '#FACC15',
-            secondary:    '#030712',
+            primary: '#FACC15',
+            secondary: '#030712',
             headingColor: '#111827',
-            textColor:    '#4B5563',
-            lightBg:      '#F9FAFB',
-            borderColor:  '#F3F4F6',
+            textColor: '#4B5563',
+            lightBg: '#F9FAFB',
+            borderColor: '#F3F4F6',
           }
         }
       }
@@ -27,28 +26,28 @@
   <script src="./ui.js" defer></script>
 </head>
 <body class="font-sans text-gray-600 antialiased bg-white selection:bg-yellow-400 selection:text-gray-950">
-  <div class="bg-gray-950 text-white text-sm py-2 px-4 flex justify-center items-center gap-2" data-purpose="top-banner">
+  <div class="bg-gray-950 text-white text-sm py-2 px-4 flex justify-center items-center gap-2">
     <span>Subscribe to our Newsletter For Latest Collections</span>
     <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-70 ml-1"></i>
   </div>
 
-  <nav class=" top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100" data-purpose="main-nav">
-    <div class="max-w-7xl mx-auto px-12 py-4 flex items-center justify-between">
+  <nav class="bg-white/95 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
       <div class="hidden md:flex items-center gap-2">
-        <a class="pill-link is-active" href="https://nurislam193.github.io/n1/">Home</a>
-        <a class="pill-link" href="https://nurislam193.github.io/n2/">Products</a>
+        <a class="pill-link" href="https://nurislam193.github.io/n1/">Home</a>
+        <a class="pill-link is-active" href="https://nurislam193.github.io/n2/">Products</a>
       </div>
 
       <button id="mobile-menu-button" class="md:hidden text-gray-900 p-2 rounded-full border border-gray-200" aria-expanded="false" aria-controls="mobile-menu" type="button">
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
 
-      <a class="flex items-center" data-purpose="brand-logo" href="https://nurislam193.github.io/n1/">
+      <a class="flex items-center" href="https://nurislam193.github.io/n1/">
         <img alt="Klothink Logo" class="h-8 w-auto" src="./images/Group.png">
       </a>
 
       <div class="flex items-center gap-3">
-        <button aria-label="Cart" class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-gray-950 hover:bg-yellow-300 transition-colors" type="button" onclick="window.location.href='https://nurislam193.github.io/n3/'">
+        <button aria-label="Cart" class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-gray-950 hover:bg-yellow-300 transition-colors" type="button">
           <i class="fa-solid fa-cart-shopping text-sm"></i>
         </button>
         <a class="hidden md:flex px-6 py-2.5 rounded-full border border-gray-200 text-gray-900 font-bold text-sm hover:bg-gray-50 transition-colors" href="https://nurislam193.github.io/n4/">Contact Support</a>
@@ -65,578 +64,222 @@
   </nav>
 
   <main>
-    <section id="hero" data-purpose="hero-section">
-      <div class="max-w-7xl mx-auto px-12 py-16 md:py-20 flex flex-col lg:flex-row-reverse items-start gap-12 lg:gap-16">
-        <div class="flex-1 space-y-8 w-full" data-purpose="hero-content">
-          <div class="relative">
-            <p class="hidden lg:block absolute -top-1 right-0 text-[10px] font-semibold tracking-[0.2em] text-gray-400 uppercase">
-              STYLE REDEFINED.
-            </p>
-            <h1 class="text-4xl md:text-[42px] font-extrabold text-gray-900 leading-tight tracking-tight">
-              ELEVATE YOUR STYLE WITH KLOTHINK
-            </h1>
-            <p class="mt-5 text-gray-500 text-[15px] leading-relaxed max-w-md">
-              Explore a world of fashion at Klothink, where trends meet affordability. Immerse yourself in the latest styles and seize exclusive promotions.
-            </p>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <button class="px-8 py-3.5 bg-yellow-400 text-gray-950 font-bold text-sm rounded-full flex items-center gap-2 hover:bg-yellow-300 transition-colors shadow-sm" type="button">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Shop Now
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-14 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10">
+        <div class="bg-gray-50 rounded-2xl min-h-[500px] flex items-center justify-center relative overflow-hidden">
+          <div class="absolute left-5 top-1/2 -translate-y-1/2 bg-white rounded-xl p-2 shadow-sm flex flex-col gap-3 z-10">
+            <button class="product-thumb is-active" type="button" data-product-image="./images/4f1eaceb310e4889a77c48fe7c2182394872c52a (1).png" aria-label="Front view">
+              <img src="./images/4f1eaceb310e4889a77c48fe7c2182394872c52a (1).png" alt="">
             </button>
-            <button class="px-8 py-3.5 bg-white border border-gray-200 text-gray-900 font-bold text-sm rounded-full hover:bg-gray-50 transition-colors" type="button">
-              Contact Us
+            <button class="product-thumb" type="button" data-product-image="./images/5e3cdddeb001fb187737c6b2785ed82e8cd3a0b6 (1).png" aria-label="Back view">
+              <img src="./images/5e3cdddeb001fb187737c6b2785ed82e8cd3a0b6 (1).png" alt="">
+            </button>
+            <button class="product-thumb" type="button" data-product-image="./images/2100341d27b45cdc0126aaec4b7aefb593606a1e (1).png" aria-label="Side view">
+              <img src="./images/2100341d27b45cdc0126aaec4b7aefb593606a1e (1).png" alt="">
+            </button>
+            <button class="product-thumb" type="button" data-product-image="./images/86bc0438a3e061fe3407c10104d42a746e3954c8 (1).png" aria-label="Combined view">
+              <img src="./images/86bc0438a3e061fe3407c10104d42a746e3954c8 (1).png" alt="">
             </button>
           </div>
-
-
-
-
-          <div class="grid grid-cols-2 gap-3" data-purpose="hero-stats">
-            
-            <div class="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm">
-              <p class="text-[22px] font-extrabold text-gray-900 leading-tight">OVER 1000+</p>
-              <p class="text-xs text-gray-500 mt-1">Trendsetting Styles</p>
-            
+          <img id="product-main-image" class="w-full max-w-[430px] h-[440px] object-contain" src="./images/4f1eaceb310e4889a77c48fe7c2182394872c52a (1).png" alt="Urban Explorer Denim Jacket">
         </div>
-           
-           
-            <div class="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm">
-              <p class="text-[22px] font-extrabold text-gray-900 leading-tight">99%</p>
-          
-          
-              <p class="text-xs text-gray-500 mt-1">Customer Satisfaction Rate</p>
+
+        <div class="space-y-5">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-5">
+            <div>
+              <p class="text-sm text-gray-400 mb-1">Men's Casual Outerwear <span class="bg-yellow-200 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">12 Left!</span></p>
+              <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Urban Explorer Denim Jacket</h1>
+              <p class="text-3xl font-bold text-gray-900 mt-4">$69.99</p>
             </div>
-            <div class="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm">
-              <p class="text-[22px] font-extrabold text-gray-900 leading-tight">24/7</p>
-           
-           
-              <p class="text-xs text-gray-500 mt-1">Shopping Convenience</p>
+            <div class="flex gap-3">
+              <button class="px-8 py-3.5 rounded-full bg-gray-950 text-white text-sm font-bold hover:bg-black transition-colors" type="button">
+                <i class="fa-solid fa-bag-shopping mr-2"></i>Buy Now
+              </button>
+              <button class="px-8 py-3.5 rounded-full border border-gray-200 bg-white text-gray-900 text-sm font-bold hover:bg-gray-50 transition-colors" type="button">
+                <i class="fa-solid fa-cart-shopping mr-2"></i>Add To Cart
+              </button>
             </div>
-            <div class="border border-gray-100 bg-white rounded-2xl p-6 shadow-sm">
-         
-         
-              <p class="text-[22px] font-extrabold text-gray-900 leading-tight">30-DAY</p>
-              <p class="text-xs text-gray-500 mt-1">Hassle-Free Returns</p>
-            </div>
-        
-        
           </div>
-        </div>
 
-        <div class="flex-1 w-full" data-purpose="hero-image">
-          <div class="bg-gray-50 rounded-3xl relative overflow-hidden" style="padding: 1.5rem 1.5rem 5.5rem;">
-        
-            <div class="flex justify-between items-center mb-1 relative z-10">
-              <span id="hero-badge" class="px-4 py-1.5 bg-white rounded-full text-xs font-bold text-gray-900 shadow-sm">Best Seller</span>
-       
+          <div class="border border-gray-100 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Material</h3>
+              <p class="text-sm text-gray-500">High-Quality Denim (100% Cotton)</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Fit</h3>
+              <p class="text-sm text-gray-500">Classic Fit</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Color</h3>
               <div class="flex gap-2">
-                <button id="hero-prev" class="hero-arrow" type="button" aria-label="Previous hero product">
-                  <i class="fa-solid fa-chevron-left text-xs"></i>
-                </button>
-         
-                <button id="hero-next" class="hero-arrow hero-arrow-active" type="button" aria-label="Next hero product">
-                  <i class="fa-solid fa-chevron-right text-xs"></i>
-                </button>
+                <button class="w-5 h-5 rounded-full bg-gray-900 ring-2 ring-gray-300" type="button" aria-label="Black color"></button>
+                <button class="w-5 h-5 rounded-full bg-amber-500" type="button" aria-label="Brown color"></button>
+                <button class="w-5 h-5 rounded-full bg-yellow-300" type="button" aria-label="Yellow color"></button>
               </div>
             </div>
-            <div class="relative flex justify-center px-6 py-3">
-              <img id="hero-image" alt="Yellow Casual Jacket" class="w-full max-w-[400px] h-auto object-contain" src="./images/c4510a7f30bfac968bd533c80e6258f53e496b9b.png">
-          
-              <span id="hero-tag-1" class="hero-tag top-[4%] right-[12%]">Hoodie</span>
-              <span id="hero-tag-2" class="hero-tag top-[42%] left-[1%]">Casual Jacket</span>
-              <span id="hero-tag-3" class="hero-tag bottom-[22%] right-[1%] flex items-center gap-1">
-       
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" class="text-gray-300 shrink-0"><path d="M3.5 1 C1 4 1 8 3.5 11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path></svg>
-                Full Sleeve
-              </span>
-            </div>
-            <div class="absolute bottom-3 left-3 right-3 bg-white rounded-full flex items-center gap-2 px-5 py-2.5 shadow-md z-10">
-              <span class="text-xs font-bold text-gray-900 shrink-0">Color</span>
-              <div class="flex gap-1.5 items-center">
-                <button class="color-dot color-dot-active bg-blue-400" type="button" aria-label="Blue"></button>
-                <button class="color-dot bg-yellow-400" type="button" aria-label="Yellow"></button>
-                <button class="color-dot bg-amber-300" type="button" aria-label="Amber"></button>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Sizes</h3>
+              <div class="flex gap-2 text-sm font-bold">
+                <button class="size-chip">S</button>
+                <button class="size-chip size-chip-active">M</button>
+                <button class="size-chip">L</button>
+                <button class="size-chip">XL</button>
+                <button class="size-chip">XXL</button>
               </div>
-              <div class="w-px h-4 bg-gray-200 mx-1 shrink-0"></div>
-              <span class="text-xs font-bold text-gray-900 shrink-0">Sizes</span>
-              <div class="flex gap-0.5">
-                <button class="size-chip" type="button">S</button>
-                <button class="size-chip size-chip-active" type="button">M</button>
-                <button class="size-chip" type="button">L</button>
-                <button class="size-chip" type="button">XL</button>
-              </div>
-              <div class="w-px h-4 bg-gray-200 mx-1 shrink-0"></div>
-              <a class="ml-auto text-xs font-bold text-gray-900 hover:text-yellow-500 transition-colors flex items-center gap-1 whitespace-nowrap" href="https://nurislam193.github.io/n3/">
-                View Similar <span class="text-sm">→</span>
-              </a>
             </div>
+          </div>
+
+          <div class="border border-gray-100 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-4">Shipping Information</h3>
+            <ul class="list-disc pl-5 text-sm text-gray-500 space-y-2">
+              <li>Standard shipping: <span class="text-gray-900 font-bold">3-5 business days</span></li>
+              <li>Express shipping options available at checkout</li>
+            </ul>
+          </div>
+
+          <div class="border border-gray-100 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-4">Features</h3>
+            <ul class="list-disc pl-5 text-sm text-gray-500 space-y-2">
+              <li>Distressed detailing for a rugged look</li>
+              <li>Button-up front closure with engraved metal buttons</li>
+              <li>Two side pockets for added functionality</li>
+              <li>Adjustable buttoned cuffs for a personalized fit</li>
+              <li>Back waist tabs for customizable styling</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="products" class="border-t border-gray-100" >
-      <div class="max-w-7xl mx-auto px-12 py-16 md:py-24">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div class="max-w-2xl">
-            <div class="flex items-center gap-4 mb-4">
-              <h2 class="text-3xl md:text-[40px] font-extrabold text-gray-900 tracking-tight">DISCOVER FASHION.</h2>
-              <span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase">PRODUCTS</span>
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+      <div class="flex items-center gap-4 mb-5">
+        <h2 class="text-3xl md:text-[40px] font-bold text-gray-900 tracking-tight">REVIEWS</h2>
+        <span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase">PRODUCT REVIEWS</span>
+      </div>
+      <p class="text-sm text-gray-500 leading-relaxed mb-12 max-w-5xl">At Klothink, our customers are the heartbeat of our brand. Explore the heartfelt testimonials shared by those who have experienced the magic of Klothink fashion.</p>
+      <div class="relative bg-gray-50 rounded-2xl p-6 md:p-8">
+        <button class="absolute left-[-28px] top-1/2 -translate-y-1/2 w-11 h-11 rounded-full border border-gray-200 bg-white text-gray-500 hidden md:flex items-center justify-center" type="button">
+          <i class="fa-solid fa-chevron-left text-xs"></i>
+        </button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="review-card">
+            <div class="flex items-center justify-between mb-5">
+              <div class="flex items-center gap-3">
+                <img src="./images/dd702fb9303f1f4f338ed09cb52b7c3b59b74658.png" class="w-12 h-12 rounded-full" alt="">
+                <div><h3 class="font-bold text-gray-900 text-sm">Alex M</h3><div class="text-yellow-400 text-xs">★★★★★</div></div>
+              </div>
+              <img src="./images/Text.png" class="w-8" alt="">
             </div>
-         
-            <p class="text-sm text-gray-500 leading-relaxed">
-              Dive into a world of fashion innovation at Klothink. Our carefully curated collections bring together the latest trends and timeless classics, ensuring you find the perfect pieces for every occasion.
-            </p>
-         
-          </div>
-          
-          
-          <button class="px-8 py-3.5 bg-yellow-400 text-gray-950 font-bold text-sm rounded-full hover:bg-yellow-300 transition-colors whitespace-nowrap shadow-sm" type="button" onclick="window.location.href='https://nurislam193.github.io/n2/'">
-            View All Products
-          </button>
-        </div>
-
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
-         
-          <div class="flex gap-8 overflow-x-auto w-full md:w-auto pb-4 border-b border-gray-100 text-[13px] font-bold" data-category-tabs>
-            <button class="tab-button tab-active" data-category-filter="all" type="button">ALL</button>
-           
-            <button class="tab-button" data-category-filter="menswear" type="button">MENSWEAR</button>
-           
-            <button class="tab-button" data-category-filter="womenswear" type="button">WOMENSWEAR</button>
-           
-            <button class="tab-button" data-category-filter="kidswear" type="button">KIDSWEAR</button>
-          </div>
-          
-          <div class="flex gap-2" data-style-tags>
-           
-           
-            <button class="chip-button chip-active" data-style-filter="casual" type="button">Casual</button>
-           
-            <button class="chip-button" data-style-filter="formal" type="button">Formal</button>
-           
-            <button class="chip-button" data-style-filter="party" type="button">Party</button>
-          
-          </div>
-        
-        
-        
-        </div>
-
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-         
-         
-         
-         
-         
-          <article class="group product-card">
-            <div class="product-image-wrap">
-              <img alt="" class="product-image" src="./images/418bd70b5e88f8ed3eb89cff38dd122bb42213c7.png">
-              <button class="" type="">
-              </button>
-            </div>
-            <h3 class="product-title">Classic Denim Jeans</h3>
-            <p class="product-price">$49.99</p>
+            <p class="text-sm text-gray-600 leading-relaxed">Absolutely love this denim jacket! The fit is perfect, and the distressed detailing gives it a rugged yet stylish look.</p>
           </article>
-          <article class="group product-card">
-            <div class="product-image-wrap">
-              <img alt="" class="product-image" src="./images/bd7b653987791f165cce045ab34f37a37b0b3a8d.png">
-              <button class="" type="">
-              </button>
+          <article class="review-card">
+            <div class="flex items-center justify-between mb-5">
+              <div class="flex items-center gap-3">
+                <img src="./images/1.png" class="w-12 h-12 rounded-full" alt="">
+                <div><h3 class="font-bold text-gray-900 text-sm">Emily S</h3><div class="text-yellow-400 text-xs">★★★★★</div></div>
+              </div>
+              <img src="./images/Text.png" class="w-8" alt="">
             </div>
-            <h3 class="product-title">Cozy Comfort Hoodie</h3>
-            <p class="product-price">$39.99</p>
+            <p class="text-sm text-gray-600 leading-relaxed">Great quality and versatile styling options. The buttons are sturdy, and the jacket feels well-made.</p>
           </article>
-          <article class="group product-card">
-            <div class="product-image-wrap">
-              <img alt="" class="product-image" src="./images/30c9f2bd350702f764639aee18834154a078af82.png">
-              <button class="" type="">
-              </button>
+          <article class="review-card">
+            <div class="flex items-center justify-between mb-5">
+              <div class="flex items-center gap-3">
+                <img src="./images/2.png" class="w-12 h-12 rounded-full" alt="">
+                <div><h3 class="font-bold text-gray-900 text-sm">Chris B</h3><div class="text-yellow-400 text-xs">★★★★★</div></div>
+              </div>
+              <img src="./images/Text.png" class="w-8" alt="">
             </div>
-            <h3 class="product-title">Classic Polo Shirt</h3>
-            <p class="product-price">$29.99</p>
-          </article>
-          <article class="group product-card">
-            <div class="product-image-wrap">
-              <img alt="" class="product-image" src="./images/fd1f57061a9fd79ee3bbe72c48f1a46de34207bb.png">
-              <button class="">
-              </button>
-            </div>
-            <h3 class="product-title">Chino Pants</h3>
-            <p class="product-price">$44.99</p>
+            <p class="text-sm text-gray-600 leading-relaxed">Urban Explorer exceeded my expectations. The denim is excellent quality, and the fit is just right.</p>
           </article>
         </div>
+        <button class="absolute right-[-28px] top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-gray-950 text-white hidden md:flex items-center justify-center" type="button">
+          <i class="fa-solid fa-chevron-right text-xs"></i>
+        </button>
+      </div>
+    </section>
 
-        <div class="flex items-center justify-between">
-          <div class="flex-1 max-w-sm h-1 bg-gray-200 rounded-full overflow-hidden">
-            <div id="page-progress" class="h-full bg-gray-900 rounded-full progress-track"></div>
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24" data-purpose="faq-section">
+      <div class="max-w-5xl mb-12">
+        <div class="flex items-center gap-4 mb-4">
+          <h2 class="text-3xl md:text-[40px] font-bold text-gray-900 tracking-tight">FREQUENTLY ASKED QUESTIONS</h2>
+          <span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase">FAQ</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed">Ease into the world of Klothink with clarity. Our FAQs cover a spectrum of topics, ensuring you have the information you need for a seamless shopping experience.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="space-y-4">
+          <div class="faq-card" data-answer="Yes, this jacket is available in black, sand, and warm yellow seasonal colors.">
+            <span>Does the jacket come in different colors?</span><i class="fa-solid fa-plus"></i>
           </div>
-          <div class="flex gap-2 pl-4">
-            <button id="page-prev" class="pager-arrow" type="button" aria-label="Previous products"><i class="fa-solid fa-chevron-left text-sm"></i></button>
-            <button id="page-next" class="pager-arrow pager-arrow-active" type="button" aria-label="Next products"><i class="fa-solid fa-chevron-right text-sm"></i></button>
+          <div class="faq-card" data-answer="Yes, it includes inside pockets for small essentials while keeping the exterior clean.">
+            <span>Are there any inside pockets in the jacket?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Machine wash cold with like colors and hang dry to preserve the finish.">
+            <span>Can I machine wash the denim jacket?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Pair it with casual trousers, denim, or layered basics for weekend looks.">
+            <span>How do I style the jacket for different occasions?</span><i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="faq-card open" data-answer="The jacket is crafted from high-quality denim, composed of 100% cotton for a comfortable and durable wear.">
+            <span>What is the material of the Urban Explorer Denim Jacket?</span><i class="fa-solid fa-xmark"></i>
+            <p class="faq-answer">The jacket is crafted from high-quality denim, composed of 100% cotton for a comfortable and durable wear.</p>
+          </div>
+          <div class="faq-card" data-answer="Use the size guide and your chest measurement. If you are between sizes, choose the larger one.">
+            <span>How do I determine the right size for me?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Yes. Use a gentle cycle and avoid bleach or high heat.">
+            <span>Can I machine wash the denim jacket?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Yes, availability depends on stock and seasonal releases.">
+            <span>Does the jacket come in different colors?</span><i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="faq-card" data-answer="The distressing is reinforced and designed to hold up to normal wear.">
+            <span>Is the distressed detailing on the jacket prone to fraying?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Yes, this jacket comes in multiple color options depending on current inventory.">
+            <span>Does the jacket come in different colors?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Yes. Wash cold, turn inside out, and air dry for best results.">
+            <span>Can I machine wash the denim jacket?</span><i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-card" data-answer="Wear it over basics for everyday use or layer it with smarter pieces for a sharper outfit.">
+            <span>How do I style the jacket for different occasions?</span><i class="fa-solid fa-plus"></i>
           </div>
         </div>
       </div>
     </section>
-
-
-
-<section class="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-100" data-purpose="experience-section">
-<div class="max-w-4xl mb-12">
-<div class="flex items-center gap-4 mb-4">
-<h2 class="text-3xl md:text-[40px] font-medium text-headingColor tracking-tight py-6">THE KLOTHINK EXPERIENCE.</h2>
-<span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase bg-white p">ABOUT US</span>
-</div>
-<p class="text-sm text-textColor leading-relaxed">
-    At Klothink, we breathe life into fashion, blending creativity with commitment. Our journey is fueled by a dedication to delivering unparalleled style and quality. Join us in redefining fashion and embracing a community where every purchase tells a story.
-  </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- 1 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-star text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Passionate Craftsmanship</h3>
-<p class="text-sm text-textColor leading-relaxed">Every garment at Klothink is crafted with passion, reflecting our commitment to quality and innovation.</p>
-</div>
-<!-- 2 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-bullseye text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Fashion Forward</h3>
-<p class="text-sm text-textColor leading-relaxed">We're trendsetters, curating styles that empower and inspire confidence.</p>
-</div>
-<!-- 3 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-heart text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Customer-Centric Approach</h3>
-<p class="text-sm text-textColor leading-relaxed">At Klothink, our customers are at the heart of everything we do.</p>
-</div>
-<!-- 4 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-globe text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Global Inspiration</h3>
-<p class="text-sm text-textColor leading-relaxed">Influenced by global trends, we bring you a diverse and dynamic collection.</p>
-</div>
-<!-- 5 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-bolt text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Empowering Your Style</h3>
-<p class="text-sm text-textColor leading-relaxed">Beyond clothing, Klothink is a lifestyle. Join us on a journey of self-expression.</p>
-</div>
-<!-- 6 -->
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
-<i class="fa-solid fa-leaf text-secondary text-lg"></i>
-</div>
-<h3 class="font-bold text-headingColor text-lg mb-3">Sustainable Practices</h3>
-<p class="text-sm text-textColor leading-relaxed">Klothink is committed to sustainability, integrating eco-friendly practices into our production process.</p>
-</div>
-</div>
-</section>
-
-
-    <section id="testimonials" class="border-t border-gray-100" data-purpose="testimonials-section">
-      <div class="max-w-7xl mx-auto px-12 py-16 md:py-24">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div class="max-w-2xl">
-            <div class="flex items-center gap-4 mb-4">
-              <h2 class="text-3xl md:text-[40px]  text-gray-900 tracking-tight">CUSTOMERS LOVE.</h2>
-              <span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase">TESTIMONIALS</span>
-            </div>
-            <p class="text-sm text-gray-500 leading-relaxed">
-              At Klothink, our customers are the heartbeat of our brand. Explore the heartfelt testimonials shared by those who have experienced Klothink fashion.
-            </p>
-          </div>
-          <button class="px-8 py-3.5 bg-yellow-400 text-gray-950 font-bold text-sm rounded-full hover:bg-yellow-300 transition-colors whitespace-nowrap shadow-sm" type="button">
-            View All Testimonials
-          </button>
-        </div>
-
-        <div class="flex items-center gap-6">
-          <button id="testimonial-prev" type="button"
-            class="shrink-0 w-11 h-11 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-900 hover:bg-yellow-400 hover:border-yellow-400 transition-colors shadow-sm md:flex hidden">
-            <i class="fa-solid fa-chevron-left text-xs"></i>
-          </button>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
-            <article class="bg-white border border-gray-100 rounded-2xl p-6 grid gap-5">
-              <div class="flex items-center gap-3">
-                <div class="w-14 h-14 rounded-full overflow-hidden border border-gray-200">
-                  <img src="./images/dd702fb9303f1f4f338ed09cb52b7c3b59b74658.png" alt="" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <div class="grid grid-cols-2 items-center gap-4">
-                    <h3 class="font-bold text-gray-900 text-sm">Sarah Thompson</h3>
-                    <img class="w-8 h-8 justify-self-end" 
-                         src="./images/Text.png" 
-                         alt="">
-                  </div>
-                  <div class="flex gap-1 mt-1">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                  </div>
-                </div>
-              </div>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Klothink exceeded my expectations. The quality and design made me feel confident. Fast shipping too.
-              </p>
-            </article>
-
-            <article class="bg-white border border-gray-100 rounded-2xl p-6 grid gap-5">
-              <div class="flex items-center gap-3">
-                <div class="w-14 h-14 rounded-full overflow-hidden border border-gray-200">
-                  <img src="./images/1.png" alt="" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <div class="grid grid-cols-2 items-center gap-4">
-                    <h3 class="font-bold text-gray-900 text-sm">Sarah Thompson</h3>
-                    <img class="w-8 h-8 justify-self-end" 
-                         src="./images/Text.png" 
-                         alt="">
-                  </div>
-                  <div class="flex gap-1 mt-1">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                  </div>
-                </div>
-              </div>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Klothink exceeded my expectations. The quality and design made me feel confident. Fast shipping too.
-              </p>
-            </article>
-
-            <article class="bg-white border border-gray-100 rounded-2xl p-6 grid gap-5">
-              <div class="flex items-center gap-3">
-                <div class="w-14 h-14 rounded-full overflow-hidden border border-gray-200">
-                  <img src="./images/2.png" alt="" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <div class="grid grid-cols-2 items-center gap-4">
-                    <h3 class="font-bold text-gray-900 text-sm">Sarah Thompson</h3>
-                    <img class="w-8 h-8 justify-self-end" 
-                         src="./images/Text.png" 
-                         alt="">
-                  </div>
-                  <div class="flex gap-1 mt-1">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                    <img src="./images/Shape.png" alt="" class="w-4 h-4">
-                  </div>
-                </div>
-              </div>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Adorable and comfortable! My daughter loves her new outfit. Thank you, Klothink, for dressing our little fashionista.
-              </p>
-            </article>
-          </div>
-          
-          <button id="testimonial-next" type="button"
-            class="shrink-0 w-11 h-11 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-900 hover:bg-yellow-400 hover:border-yellow-400 transition-colors shadow-sm md:flex hidden">
-            <i class="fa-solid fa-chevron-right text-xs"></i>
-          </button>
-        </div>
-        
-      </div>
-      
-    </section>
-    
   </main>
-<section class="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-100" data-purpose="faq-section">
-<div class="max-w-3xl mb-12">
-<div class="flex items-center gap-4 mb-4">
-<h2 class="text-3xl md:text-[40px] font-medium text-headingColor tracking-tight">QUESTIONS? WE HAVE ANSWERS.</h2>
-<span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase bg-white px-2">FAQ</span>
-</div>
-<p class="text-sm text-textColor leading-relaxed">
-    Ease into the world of Klothink with clarity. Our FAQs cover a spectrum of topics, ensuring you have the information you need for a seamless shopping experience.
-  </p>
-</div>
-<div class="flex gap-8 overflow-x-auto w-full pb-4 border-b border-gray-100 text-[13px] font-bold mb-10" data-purpose="faq-tabs">
-<button class="pb-4 text-headingColor border-b-2 border-headingColor whitespace-nowrap uppercase tracking-wide">ALL</button>
-<button class="pb-4 text-textColor hover:text-headingColor transition-colors whitespace-nowrap uppercase tracking-wide">ORDERING</button>
-<button class="pb-4 text-textColor hover:text-headingColor transition-colors whitespace-nowrap uppercase tracking-wide">SHIPPING</button>
-<button class="pb-4 text-textColor hover:text-headingColor transition-colors whitespace-nowrap uppercase tracking-wide">RETURNS</button>
-<button class="pb-4 text-textColor hover:text-headingColor transition-colors whitespace-nowrap uppercase tracking-wide">CUSTOMER SUPPORT</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-4">
-<div class="space-y-4">
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">Can I modify my order after placing it?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">How do I initiate a return?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">How can I unsubscribe from the newsletter?</span>
-<i class="fa-solid fa-xmark text-textColor cursor-pointer"></i></div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">Do you offer exchanges for products?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-</div>
-<div class="space-y-4">
-<div class="bg-white border border-gray-100 rounded-xl p-6">
-<div class="flex justify-between items-start mb-4">
-<span class="font-bold text-headingColor text-[15px] pr-8">How can I place an order on Klothink?</span>
-<i class="fa-solid fa-xmark text-textColor cursor-pointer"></i>
-</div>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">What payment methods do you accept?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">How can I track my order?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">What is your shipping policy?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-</div>
-<div class="space-y-4 md:col-span-2 lg:col-span-1 lg:col-start-3">
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm pr-8">Are there any additional fees for returns?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">How do I create an account on Klothink?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">Can I change my account information?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-<div class="bg-white border border-gray-100 rounded-xl p-5 flex justify-between items-center cursor-pointer hover:bg-lightBg transition-colors">
-<span class="font-bold text-headingColor text-sm">Are my personal details secure on Klothink?</span>
-<i class="fa-solid fa-plus text-textColor"></i>
-</div>
-</div>
-</div>
-</section>
 
-
-<section class="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-gray-100" data-purpose="how-it-works-section">
-<div class="max-w-4xl mb-12">
-<div class="flex items-center gap-4 mb-4">
-<h2 class="text-3xl md:text-[40px] font-medium text-headingColor tracking-tight">SEAMLESS EXPERIENCE.</h2>
-<span class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase bg-white px-2">HOW IT WORKS ?</span>
-</div>
-<p class="text-sm text-textColor leading-relaxed">
-    At Klothink, we've designed a straightforward shopping experience to make fashion accessible. Explore the journey from discovering the latest trends to receiving your handpicked styles with ease.
-  </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<h3 class="text-[56px] font-bold text-headingColor mb-4 leading-none opacity-20">01</h3>
-<h4 class="font-bold text-headingColor text-lg mb-2">Discover Trends</h4>
-<p class="text-xs text-textColor leading-relaxed">Explore our curated collection of over 1000 styles</p>
-</div>
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<h3 class="text-[56px] font-bold text-headingColor mb-4 leading-none opacity-20">02</h3>
-<h4 class="font-bold text-headingColor text-lg mb-2">Secure Checkout</h4>
-<p class="text-xs text-textColor leading-relaxed">Add your items to the cart and proceed to our secure checkout.</p>
-</div>
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<h3 class="text-[56px] font-bold text-headingColor mb-4 leading-none opacity-20">03</h3>
-<h4 class="font-bold text-headingColor text-lg mb-2">Swift Dispatch</h4>
-<p class="text-xs text-textColor leading-relaxed">Experience 95% same-day dispatch on orders.</p>
-</div>
-<div class="bg-white p-8 rounded-2xl border border-gray-100">
-<h3 class="text-[56px] font-bold text-headingColor mb-4 leading-none opacity-20">04</h3>
-<h4 class="font-bold text-headingColor text-lg mb-2">Unbox Happiness</h4>
-<p class="text-xs text-textColor leading-relaxed">Receive your carefully packaged Klothink order.</p>
-</div>
-</div>
-</section>
-
-
-<footer class="bg-white pt-20 pb-8 px-6 md:px-12 border-t border-gray-100" data-purpose="site-footer">
-<div class="max-w-7xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
-
-<div class="lg:col-span-2 space-y-8">
-<a class="flex items-center gap-2" href="https://nurislam193.github.io/n1/">
-<img alt="Klothink Logo" class="h-12 w-auto" src="./images/Group.png"/>
-</a>
-<form class="flex gap-2 max-w-sm w-full" data-purpose="newsletter-form">
-<input class="flex-1 bg-white border border-gray-200 rounded-full px-5 py-3.5 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-gray-400" placeholder="Enter Your Email" required="" type="email"/>
-<button class="px-8 py-3.5 bg-primary text-secondary font-bold rounded-full text-sm hover:bg-yellow-400 transition-colors shadow-sm" type="submit">Subscribe</button>
-</form>
-</div>
-
-<div>
-<h4 class="font-bold text-headingColor mb-6 text-lg">Home</h4>
-<ul class="space-y-4 text-sm text-textColor">
-<li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Popular Products</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Testimonials</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-headingColor mb-6 text-lg">Menswear</h4>
-<ul class="space-y-4 text-sm text-textColor">
-<li><a class="hover:text-primary transition-colors" href="#">Casual</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Formal</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Party</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Business</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-headingColor mb-6 text-lg">Womenswear</h4>
-<ul class="space-y-4 text-sm text-textColor">
-<li><a class="hover:text-primary transition-colors" href="#">Casual</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Formal</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Party</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Business</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-headingColor mb-6 text-lg">Kidswear</h4>
-<ul class="space-y-4 text-sm text-textColor">
-<li><a class="hover:text-primary transition-colors" href="#">Casual</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Formal</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Party</a></li>
-</ul>
-</div>
-</div>
-
-<div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-100 text-[11px] text-gray-500 font-medium">
-<div class="flex gap-4 items-center">
-<a class="hover:text-headingColor transition-colors" href="#">Terms &amp; Conditions</a>
-<span class="w-px h-3 bg-gray-300"></span>
-<a class="hover:text-headingColor transition-colors" href="#">Privacy Policy</a>
-</div>
-<div class="flex gap-4 text-lg">
-<a class="text-secondary hover:text-primary transition-colors" href="#"><i class="fa-brands fa-facebook"></i></a>
-<a class="text-secondary hover:text-primary transition-colors" href="#"><i class="fa-brands fa-twitter"></i></a>
-<a class="text-secondary hover:text-primary transition-colors" href="#"><i class="fa-brands fa-linkedin"></i></a>
-</div>
-<p>© 2024 Klothink. All rights reserved.</p>
-</div>
-</div>
-</footer>
+  <footer class="bg-white pt-20 pb-8 px-6 md:px-12 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
+        <div class="lg:col-span-2 space-y-8">
+          <a class="flex items-center gap-2" href="https://nurislam193.github.io/n1/">
+            <img alt="Klothink Logo" class="h-12 w-auto" src="./images/Group.png"/>
+          </a>
+          <form class="flex gap-2 max-w-sm w-full">
+            <input class="flex-1 bg-white border border-gray-200 rounded-full px-5 py-3.5 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-gray-400" placeholder="Enter Your Email" type="email"/>
+            <button class="px-8 py-3.5 bg-primary text-secondary font-bold rounded-full text-sm hover:bg-yellow-400 transition-colors shadow-sm" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div><h4 class="font-bold text-headingColor mb-6 text-lg">Home</h4><ul class="space-y-4 text-sm text-textColor"><li>Features</li><li>Popular Products</li><li>Testimonials</li><li>FAQ</li></ul></div>
+        <div><h4 class="font-bold text-headingColor mb-6 text-lg">Menswear</h4><ul class="space-y-4 text-sm text-textColor"><li>Casual</li><li>Formal</li><li>Party</li><li>Business</li></ul></div>
+        <div><h4 class="font-bold text-headingColor mb-6 text-lg">Womenswear</h4><ul class="space-y-4 text-sm text-textColor"><li>Casual</li><li>Formal</li><li>Party</li><li>Business</li></ul></div>
+        <div><h4 class="font-bold text-headingColor mb-6 text-lg">Kidswear</h4><ul class="space-y-4 text-sm text-textColor"><li>Casual</li><li>Formal</li><li>Party</li></ul></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-100 text-[11px] text-gray-500 font-medium">
+        <div class="flex gap-4 items-center"><a href="#">Terms &amp; Conditions</a><span class="w-px h-3 bg-gray-300"></span><a href="#">Privacy Policy</a></div>
+        <div class="flex gap-4 text-lg text-gray-900"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i></div>
+        <p>© 2024 Klothink. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
